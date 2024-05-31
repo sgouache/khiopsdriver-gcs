@@ -26,6 +26,7 @@ TEST(GCSDriverTest, IsReadOnly)
 	ASSERT_FALSE(driver_isReadOnly());
 }
 
+<<<<<<< HEAD
 TEST(GCSDriverTest, Connect)
 {
 	//check connection state before call to connect
@@ -54,6 +55,8 @@ TEST(GCSDriverTest, GetFileSize)
 	ASSERT_FALSE(driver_disconnect());
 }
 
+=======
+>>>>>>> 53adedf (Add: a SHARED build of the driver dll.)
 
 
 int main(int argc, char** argv)

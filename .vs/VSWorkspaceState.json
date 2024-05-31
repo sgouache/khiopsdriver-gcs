@@ -1,0 +1,13 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Ordinateur local": [
+      "builds\\ninja-multi-vcpkg"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\src"
+  ],
+  "SelectedNode": "\\src\\gcsplugin.cpp",
+  "PreviewInSolutionExplorer": true
+}

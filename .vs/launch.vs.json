@@ -1,0 +1,70 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "GCPTest.exe (Debug\\GCPTest.exe)",
+      "name": "GCPTest.exe (Debug\\GCPTest.exe)"
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "KhiopsPluginTest.exe (Debug\\KhiopsPluginTest.exe)",
+      "name": "KhiopsPluginTest.exe (Debug\\KhiopsPluginTest.exe)",
+      "args": [
+        "khiopsdriver_file_gcs.dll",
+        "gs://khiops-data/SpliceJunction.txt",
+        "gs://khiops-data/out.txt",
+        "output.txt"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "drivertest.exe (Debug\\drivertest.exe)",
+      "name": "drivertest.exe (Debug\\drivertest.exe)",
+      "args": [
+        "khiopsdriver_file_gcs.dll",
+        "gs://khiops-data/SpliceJunction.txt",
+        "gs://khiops-data/out.txt",
+        "output.txt"
+      ]
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "KhiopsPluginTest.exe (Release\\KhiopsPluginTest.exe)",
+      "name": "KhiopsPluginTest.exe (Release\\KhiopsPluginTest.exe)",
+      "args": [
+        "khiopsdriver_file_gcs.dll",
+        "gs://khiops-data/SpliceJunction.txt",
+        "gs://khiops-data/out.txt",
+        "output.txt"
+      ],
+      "env": {
+        "GCS_DRIVER_LOGLEVEL": "debug",
+        "HTTP_PROXY": "http://proxybkp.si.francetelecom.fr:8080",
+        "HTTPS_PROXY": "http://proxybkp.si.francetelecom.fr:8080"
+      }
+    },
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "drivertest.exe (Release\\drivertest.exe)",
+      "name": "drivertest.exe (Release\\drivertest.exe)",
+      "args": [
+        "khiopsdriver_file_gcs.dll",
+        "gs://khiops-data/SpliceJunction.txt",
+        "gs://khiops-data/out.txt",
+        "output.txt"
+      ],
+      "env": {
+        "GCS_DRIVER_LOGLEVEL": "debug",
+        "HTTP_PROXY": "http://proxybkp.si.francetelecom.fr:8080",
+        "HTTPS_PROXY": "http://proxybkp.si.francetelecom.fr:8080"
+      }
+    }
+  ]
+}
