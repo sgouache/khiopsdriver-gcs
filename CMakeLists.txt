@@ -47,19 +47,4 @@ target_compile_options(khiopsdriver_file_gcs
 	PRIVATE $<$<CXX_COMPILER_ID:AppleClang,Clang,GNU>:-Wall;-Wextra;-pedantic>
 )
 
-<<<<<<< HEAD
 add_subdirectory(test)
-=======
-add_library(khiopsdriver_file_gcs_test SHARED src/gcsplugin.h src/gcsplugin.cpp)
-set_target_properties(khiopsdriver_file_gcs_test PROPERTIES LINK_FLAGS_RELEASE -s)
-target_link_libraries(khiopsdriver_file_gcs_test PRIVATE google-cloud-cpp::storage spdlog::spdlog)
-
-add_executable(KhiopsPluginTest src/khiopsplugintest.cpp)
-target_link_libraries(KhiopsPluginTest PRIVATE fmt::fmt)
-
-add_executable(drivertest src/drivertest.cpp)
-target_link_libraries(drivertest)
-
-include(generate_tests.cmake)
-
->>>>>>> 53adedf (Add: a SHARED build of the driver dll.)
